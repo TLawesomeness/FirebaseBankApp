@@ -7,12 +7,12 @@ html(lang='en')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
   body
     .container
-      h1 Bank App
-      #balance Balance: 0
+      h1#title Bank App
+      #balance
       input#input(type='text' placeholder='Input amount') 
       br
-      button#depo(type='button') Deposit
-      button#with(type='button') Withdraw
+      button#depobtn(type='button') Deposit
+      button#withbtn(type='button') Withdraw
     
     .container
       h3 Account Status
@@ -23,8 +23,7 @@ html(lang='en')
           ul#wit Withdraws
         .col-md-4
           ul#fees Penalty Fees
-                    
-    
+
     script(src='https://cdn.firebase.com/js/client/2.2.1/firebase.js')
     script(src='/vendor/jquery/dist/jquery.js')
     script(sec='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')  
