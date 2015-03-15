@@ -4,7 +4,28 @@ html(lang='en')
     meta(charset='utf-8')
     title Bank App
     link(rel='stylesheet', href='/style.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
   body
-    h1 Hello, World
+    .container
+      h1 Bank App
+      #balance Balance: 0
+      input#input(type='text' placeholder='Input amount') 
+      br
+      button#depo(type='button') Deposit
+      button#with(type='button') Withdraw
+    
+    .container
+      h3 Account Status
+      .row
+        .col-md-4
+          ul#dep Deposits
+        .col-md-4
+          ul#wit Withdraws
+        .col-md-4
+          ul#fees Penalty Fees
+                    
+    
+    script(src='https://cdn.firebase.com/js/client/2.2.1/firebase.js')
     script(src='/vendor/jquery/dist/jquery.js')
+    script(sec='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')  
     script(src='/main.js')

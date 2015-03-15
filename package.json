@@ -15,7 +15,7 @@
   },
   "version": "1.0.0",
   "scripts": {
-    "start": "PORT=3333 node server/app.js",
+    "start": "PORT=3450 node server/app.js",
     "clean": "rm -rf node_modules && rm -rf public && npm install && bower install && gulp build"
   },
   "license": "MIT",
